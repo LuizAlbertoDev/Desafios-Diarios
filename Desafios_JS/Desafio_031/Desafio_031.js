@@ -1,18 +1,57 @@
-const idade = document.getElementById("idade-input")
+const usuario = []
 
-const paragrafo = document.getElementById("resultado")
+const nome = document.getElementById("nome-usuario")
 
-function verificar(){
-    const valor = Number(idade.value)
+const idade = document.getElementById("idade-usuario")
+
+const divisao = document.getElementById("cartao-usuario")
+
+function cadastrar(){
+    const nomeValor = nome.value.trim()
+    const idadeTexto = idade.value.trim()
+
+    if(!nomeValor || !idadeTexto){
+        divisao.innerHTML = "Preencha todos os campos";
+        divisao.className = "reprovado";
+        return;
+    }
+
+    const valor = Number(idadeTexto)
 
     const aprovado = valor >= 18
 
-    paragrafo.innerHTML = aprovado 
-        ? "Entrada Liberada ✅" 
-        : "Entrada Proibida ❌";
+    divisao.innerHTML = aprovado
+    ? `Usuário ${nomeValor} cadastrado (Acesso VIP)`
+    : `Usuário ${nomeValor} cadastrado (Menor de idade)` 
 
-    paragrafo.className = aprovado 
-        ? "aprovado" 
-        : "reprovado";
-        
+    divisao.className = aprovado
+    ? "aprovado"
+    : "reprovado"
+
+    nome.value = ""
+    idade.value = ""
+
+    const novoUsuario = {
+        nome: nomeValor,
+        idade: valor
+    }
+    usuario.push(novoUsuario)
+
+    desenharLista()
+}
+
+function desenharLista(listaParaDesenhar = usuario){
+    const listaUl = document.getElementById("lista-usuarios")
+
+    listaUl.innerHTML = ""
+
+    usuario.forEach( user =>{
+        listaUl.innerHTML += `<li>${user.nome} - ${user.idade}</li>`
+    })
+}
+
+function filtratVips(){
+    usuario.filter(vip =>{
+        vip.idade >= 18
+    })
 }

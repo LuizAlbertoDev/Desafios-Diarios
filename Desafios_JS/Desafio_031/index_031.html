@@ -2,27 +2,33 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Desafio 30Desafio_030.js</title>
+    <title>Desafio 31</title>
     <style>
         .aprovado {
-            color: green;
+            background-color: #f0f0f0;
             font-weight: bold;
         }
 
         .reprovado {
-            color: red;
+            background-color: #e0f7fa;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <input type="number" id="idade-input" placeholder="Sua idade">
+    <input type="text" id="nome-usuario" placeholder="Nome">
+    <input type="number" id="idade-usuario" placeholder="Idade">
+    <button onclick="cadastrar()">Cadastrar</button>
 
-    <button onclick="verificar()">Verificar Entrada</button>
+    <div id="cartao-usuario">
+        <!-- Aqui vai aparecer o resumo -->
+    </div>
 
-    <p id="resultado"></p>
+    <ul id="lista-usuarios"></ul>
 
-    <script src="Desafio_030.js"></script>
+    <button onclick="filtrarVips()">Mostrar Apenas VIPs</button>
+
+    <script src="Desafio_031.js"></script>
 </body>
 </html>
