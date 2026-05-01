@@ -1,57 +1,39 @@
-const usuario = []
+const compras = []
 
-const nome = document.getElementById("nome-usuario")
+const nomeInput = document.getElementById("nome-produto")
+const precoInput = document.getElementById("preco-produto")
+const listaProduto = document.getElementById("lista-produtos")
 
-const idade = document.getElementById("idade-usuario")
+function adicionar(){
+    const nome = nomeInput.value.trim()
+    const preco = Number(precoInput.value)
 
-const divisao = document.getElementById("cartao-usuario")
-
-function cadastrar(){
-    const nomeValor = nome.value.trim()
-    const idadeTexto = idade.value.trim()
-
-    if(!nomeValor || !idadeTexto){
-        divisao.innerHTML = "Preencha todos os campos";
-        divisao.className = "reprovado";
-        return;
+    if(nome === "" || preco <= 0){
+        alert("preencha todos os campos!")
+        return
     }
 
-    const valor = Number(idadeTexto)
-
-    const aprovado = valor >= 18
-
-    divisao.innerHTML = aprovado
-    ? `Usuário ${nomeValor} cadastrado (Acesso VIP)`
-    : `Usuário ${nomeValor} cadastrado (Menor de idade)` 
-
-    divisao.className = aprovado
-    ? "aprovado"
-    : "reprovado"
-
-    nome.value = ""
-    idade.value = ""
-
-    const novoUsuario = {
-        nome: nomeValor,
-        idade: valor
+    const item = {
+        nome: nome,
+        preco: preco
     }
-    usuario.push(novoUsuario)
 
-    desenharLista()
+    compras.push(item)
+
+    nomeInput.value = ""
+    precoInput.value = ""
+
+    desenhar()
 }
 
-function desenharLista(listaParaDesenhar = usuario){
-    const listaUl = document.getElementById("lista-usuarios")
+function desenhar(){
+    listaProduto.innerHTML = ""
 
-    listaUl.innerHTML = ""
+    compras.forEach((item,index) => {
+        const li = document.createElement("li")
 
-    usuario.forEach( user =>{
-        listaUl.innerHTML += `<li>${user.nome} - ${user.idade}</li>`
-    })
-}
+        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`
 
-function filtratVips(){
-    usuario.filter(vip =>{
-        vip.idade >= 18
+        listaProduto.appendChild(li)
     })
 }

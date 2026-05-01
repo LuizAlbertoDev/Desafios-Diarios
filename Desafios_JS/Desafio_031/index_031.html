@@ -3,31 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Desafio 31</title>
-    <style>
-        .aprovado {
-            background-color: #f0f0f0;
-            font-weight: bold;
-        }
-
-        .reprovado {
-            background-color: #e0f7fa;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
 
-    <input type="text" id="nome-usuario" placeholder="Nome">
-    <input type="number" id="idade-usuario" placeholder="Idade">
-    <button onclick="cadastrar()">Cadastrar</button>
+    <input type="text" id="nome-produto" placeholder="Nome do Produto">
+    <input type="number" id="preco-produto" placeholder="Preço do Produto">
+    
+    <button onclick="adicionar()">Adicionar</button>
 
-    <div id="cartao-usuario">
-        <!-- Aqui vai aparecer o resumo -->
-    </div>
-
-    <ul id="lista-usuarios"></ul>
-
-    <button onclick="filtrarVips()">Mostrar Apenas VIPs</button>
+    <ul id="lista-produtos"></ul>
 
     <script src="Desafio_031.js"></script>
 </body>
