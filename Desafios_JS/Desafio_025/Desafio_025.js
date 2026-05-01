@@ -28,4 +28,3 @@ function filtrarPorPreço() {
     
     desenhar(filtrados);
 }
-
