@@ -1,39 +1,45 @@
-const compras = []
+const listaCompras = []
 
-const nomeInput = document.getElementById("nome-produto")
-const precoInput = document.getElementById("preco-produto")
-const listaProduto = document.getElementById("lista-produtos")
+const lista = document.getElementById("exibicao-lista")
+const nomeInput = document.getElementById("item-nome")
+const precoInput = document.getElementById("item-preco")
 
 function adicionar(){
-    const nome = nomeInput.value.trim()
-    const preco = Number(precoInput.value)
 
-    if(nome === "" || preco <= 0){
-        alert("preencha todos os campos!")
-        return
+    const nomeValor = nomeInput.value
+    const precoValor = Number(precoInput.value)
+
+    if(nomeValor === "" || precoValor === 0) return 
+    
+
+    const produto = {
+        nome:nomeValor, 
+        preco:precoValor
     }
 
-    const item = {
-        nome: nome,
-        preco: preco
-    }
+    listaCompras.push(produto)
 
-    compras.push(item)
+    desenhar()
 
     nomeInput.value = ""
     precoInput.value = ""
 
-    desenhar()
 }
 
 function desenhar(){
-    listaProduto.innerHTML = ""
 
-    compras.forEach((item,index) => {
+    lista.innerHTML= ""
+
+    listaCompras.forEach(n => {
         const li = document.createElement("li")
 
-        li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`
+        li.textContent = `${n.nome} - R$ ${n.preco.toFixed(2)}`
 
-        listaProduto.appendChild(li)
+        if (n.preco > 50){
+            li.style.color = "red"
+            li.style.fontWeight = "bold"
+        }
+
+        lista.appendChild(li)
     })
 }

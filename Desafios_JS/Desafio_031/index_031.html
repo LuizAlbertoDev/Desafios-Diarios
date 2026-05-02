@@ -6,12 +6,15 @@
 </head>
 <body>
 
-    <input type="text" id="nome-produto" placeholder="Nome do Produto">
-    <input type="number" id="preco-produto" placeholder="Preço do Produto">
+    <h3>Minha Lista de Compras</h3>
     
-    <button onclick="adicionar()">Adicionar</button>
+    <input type="text" id="item-nome" placeholder="Produto (ex: Arroz)">
+    <input type="number" id="item-preco" placeholder="Preço (ex: 5.50)">
+    
+    <button onclick="adicionar()">Adicionar à Lista</button>
+    <button onclick="limparTudo()">Limpar Tudo</button>
 
-    <ul id="lista-produtos"></ul>
+    <ul id="exibicao-lista"></ul>
 
     <script src="Desafio_031.js"></script>
 </body>
