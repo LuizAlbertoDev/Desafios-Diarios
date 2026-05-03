@@ -34,11 +34,13 @@ function desenhar(){
     tarefas.forEach((n,index) => {
         const li = document.createElement("li")
 
+        const estilo  = n.concluida ? 'style="text-decoration: line-through; color: gray;"' : '';
+
         li.innerHTML = `
             ID: ${n.id} - Titulo: ${n.titulo} - concluida: ${n.concluida}
             <button onclick="excluir(${index})">Apagar</button>
+            <button onclick="alternar(${index})">${n.concluida ? 'Desmarcar' : 'Concluir'}</button>
         `
-
         lista.appendChild(li)
 
     });
@@ -46,6 +48,12 @@ function desenhar(){
 
 function excluir(index){
     tarefas.splice(index, 1)
+    salvar()
+    desenhar()
+}
+
+function alternar(index){
+    tarefas[index].concluida = !tarefas[index].concluida
     salvar()
     desenhar()
 }
