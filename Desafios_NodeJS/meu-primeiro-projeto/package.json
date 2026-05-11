@@ -1,0 +1,12 @@
+{
+  "name": "meu-primeiro-projeto",
+  "version": "1.0.0",
+  "description": "My first project",
+  "license": "ISC",
+  "author": "luiz alberto huller da silva",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
