@@ -1,7 +1,6 @@
     import createItem from "./services/item.js";
     import * as cartService from "./services/cart.js"
 
-
     const cart = []
     const myWhishList = []
 
