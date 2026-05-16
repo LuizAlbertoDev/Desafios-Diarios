@@ -1,5 +1,7 @@
 // oq meu sistema precisa ter ? ( controlador de gastos UBER )
 
+// criando desafio pessoal
+
 //variavel de total de km rodados
 const totalKmRodados = 200
 
@@ -30,3 +32,4 @@ function calcularLucroLiquido(){
     const lucroLiquido = totalBruto - gastoGasolina
     console.log(`o lucro liquido é de R$ ${lucroLiquido.toFixed(2)}`)
 }
+
