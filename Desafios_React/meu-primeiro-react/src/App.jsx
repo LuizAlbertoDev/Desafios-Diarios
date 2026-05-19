@@ -1,7 +1,7 @@
-import Desafio_003 from './exercicios/Desafio_003.jsx'
+import Desafio_004 from './exercicios/Desafio_004.jsx'
 
 function App() {
-  return <Desafio_003 />
+  return <Desafio_004 />
 }
 
 export default App
