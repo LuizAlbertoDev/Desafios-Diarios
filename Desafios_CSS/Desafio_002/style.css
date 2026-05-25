@@ -6,6 +6,7 @@ h1 {
     color: #2563eb;
     font-size: 32px;
     text-align: center;
+    border-bottom:3px solid #2563eb;
 }
 
 p{
@@ -14,5 +15,18 @@ p{
 
 li{
     color: #2563eb;
+}
+
+h2{
+    margin-top: 30px;
+}
+
+ul{
+    padding-left: 40px;
+}
+
+.destaque{
+    background-color: yellow;
+    padding: 8px;
 }
 
