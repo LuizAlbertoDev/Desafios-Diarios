@@ -1,0 +1,17 @@
+ body{
+            font-family: Arial;
+            padding: 20px;
+        }
+
+        .erro{
+            color: red;
+            margin-bottom: 10px;
+        }
+
+        .card{
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 250px;
+        }
