@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Outfit:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  text-align: center;
+}
+
+.container::before {
+  content: "CRONÔMETRO";
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+#display {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 64px;
+  color: #1a1a1a;
+  letter-spacing: 4px;
+  margin-bottom: 2rem;
+}
+
+#display.running { color: #1D9E75; }
+#display.paused  { color: #BA7517; }
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: transparent;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover { background: #f0f0f0; }
+button:active { transform: scale(0.97); }
+
+#iniciar {
+  background: #1D9E75;
+  color: white;
+  border-color: #1D9E75;
+}
+
+#iniciar:hover { background: #0F6E56; }

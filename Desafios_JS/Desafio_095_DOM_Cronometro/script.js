@@ -10,6 +10,8 @@ function atualizar(){
     const minutos = Math.floor(tempo/60)
     const segundos = tempo % 60
     display.textContent =
+
+        //tive que pesquisar sobra para aprender
         `${String(minutos).padStart(2, "0")}:${String(segundos).padStart(2, "0")}`
 }
 

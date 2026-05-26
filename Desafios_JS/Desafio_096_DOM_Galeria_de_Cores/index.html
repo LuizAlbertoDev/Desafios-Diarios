@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio_096_DOM_Galeria_de_Cores</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <label for="cor">Escolha uma cor:</label>
+    <input type="color" id="cor">
+
+    <label for="opacidade">
+      Opacidade: <span id="valor-opacidade">100</span>%
+    </label>
+    <input type="range" id="opacidade" min="0" max="100" value="100">
+
+  </div>
+
+  <div class="preview" id="preview"></div>
+
+    
+  
+  <script src="script.js"></script>
+</body>
+</html>
