@@ -1,0 +1,41 @@
+body{
+      font-family: Arial;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1{
+      margin-bottom: 20px;
+    }
+
+    .container{
+      display: flex;
+      gap: 30px;
+    }
+
+    .produtos,
+    .carrinho{
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .produto,
+    .item-carrinho{
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    button{
+      margin-top: 10px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    #total{
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
