@@ -1,0 +1,49 @@
+/* Importando a fonte para o projeto */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+/* 1. Definindo as cores do tema padrão (Claro) no root */
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #1a1a1a;
+    --cor-botao-fundo: #2d2d2d;
+    --cor-botao-texto: #ffffff;
+}
+
+/* 2. Definindo as cores do tema Escuro */
+.dark-theme {
+    --cor-fundo: #121212;
+    --cor-texto: #f5f5f5;
+    --cor-botao-fundo: #f5f5f5;
+    --cor-botao-texto: #121212;
+}
+
+/* 3. Aplicando as variáveis nos elementos */
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 1s ease, color 1s ease;
+}
+
+button {
+    background-color: var(--cor-botao-fundo);
+    color: var(--cor-botao-texto);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-family: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
