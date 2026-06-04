@@ -8,4 +8,5 @@ itens.forEach((item,index) => {
         item.style.backgroundColor = "orange"
     }
     
+    
 })
