@@ -30,8 +30,7 @@ li{
     font-weight: bold;
 }
 
-#tarefaInput,
-#adicionarTarefa {
+#tarefaInput,#adicionarTarefa {
     width: 100%;
     box-sizing: border-box;
 }
