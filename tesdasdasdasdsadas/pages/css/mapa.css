@@ -1,0 +1,49 @@
+.entrada{
+    background:#22c55e;
+    color:white;
+    padding:15px;
+    text-align:center;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+.corredor{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.prateleiras{
+    display:flex;
+    gap:15px;
+    margin-top:15px;
+}
+
+.prateleira{
+    width:120px;
+    height:120px;
+
+    background:#e5e7eb;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.prateleira:hover{
+    background:#3b82f6;
+    color:white;
+    transform:scale(1.05);
+}
+
+.prateleira.ativa{
+    background:#22c55e;
+    color:white;
+}
