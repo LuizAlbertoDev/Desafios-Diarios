@@ -14,6 +14,7 @@ async function buscarPost() {
         console.log(erro.message)
 
     }
+    
 }
 
 buscarPost()
