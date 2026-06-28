@@ -1,14 +1,44 @@
-# 📅 Desafios Diários
+# 📚 Desafios Diários
 
-Repositório com desafios diários de JavaScript e Node.js, 
-resolvidos com foco em lógica, boas práticas e evolução contínua.
+Repositório com mais de **175 desafios práticos** de JavaScript, desenvolvidos como parte de uma jornada de transição de carreira para desenvolvimento fullstack.
 
-## 📁 Organização
+## 🎯 Objetivo
 
-- `Desafios_JS` — desafios de JavaScript puro
-- `Desafios_NodeJS` — desafios com Node.js
-- `Desafios_Criados` — desafios autorais
+Aprender JavaScript do zero até conceitos avançados através de desafios diários progressivos — cobrindo tudo que o mercado júnior exige.
 
-## 🛠️ Tecnologias
-- JavaScript (ES6+)
-- Node.js
+## 🚀 Tecnologias
+
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+
+## 📚 Módulos
+
+| Módulo | Desafios | Conteúdo |
+|--------|----------|----------|
+| JS Fundamentos | 001–082 | Arrays, objetos, loops, funções, callbacks |
+| DOM & Eventos | 083–108 | querySelector, addEventListener, manipulação dinâmica |
+| Variáveis & Tipos | 109–113 | let, const, typeof, operadores |
+| Estruturas de controle | 115–119 | if/else, switch, escopo |
+| Arrays avançados | 120–125 | map, filter, reduce, objetos |
+| Assíncrono I | 126–133 | async/await, fetch, try/catch |
+| Criação dinâmica de DOM | 134–144 | createElement, eventos, toggle |
+| Funções avançadas | 145–154 | Arrow functions, callbacks, HOF, map, filter, reduce |
+| Assíncrono II | 155–175 | Promises, fetch, AbortController, cache, retry, paginação |
+
+## 🗂️ Projetos desenvolvidos
+
+- **Calculadora** — lógica de estado com switch sem eval()
+- **Cronômetro** — setInterval, controle de tempo
+- **Lista de tarefas** — CRUD com DOM
+- **Buscador de usuários** — fetch + async/await + DOM
+- **Dashboard de vendas** — map, filter e reduce com dados reais
+- **Processador de lista** — encadeamento de métodos funcionais
+- **Dashboard de posts** — paginação com fetch e navegação
+
+## 👨‍💻 Autor
+
+**Luiz Alberto** — em transição de carreira para desenvolvimento fullstack
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuizAlbertoDev)
